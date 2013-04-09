@@ -1,0 +1,12 @@
+development: &default
+  adapter: postgresql
+  host: localhost
+  username: USERNAME
+
+development:
+  <<: *default
+  database: outpsoken-dev
+
+test:
+  <<: *default
+  database: outspoken-test
