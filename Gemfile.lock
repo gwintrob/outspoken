@@ -45,6 +45,8 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.7)
       multipart-post (~> 1.1)
+    filepicker-rails (0.0.2)
+      railties (>= 3.1.0, < 5.0)
     font-awesome-sass-rails (3.0.2.2)
       railties (>= 3.1.1)
       sass-rails (>= 3.1.1)
@@ -91,6 +93,7 @@ GEM
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
+    opentok (0.0.92)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -144,11 +147,13 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 3.2.1)
+  filepicker-rails
   font-awesome-sass-rails
   haml-rails
   jquery-rails
   koala
   omniauth-facebook
+  opentok
   pg
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)

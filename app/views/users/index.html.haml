@@ -1,7 +1,14 @@
-.row12 Testing 1,2,3...
-.row12#user_nav
-  - if current_user
-    Signed in as <strong>#{current_user.name}</strong>
-    #sign_out= link_to "Sign out", signout_path
-  - else
-    #sign_in= link_to "Sign in with Facebook", "/auth/facebook"
+-# .row12 Testing 1,2,3...
+-# .row12#user_nav
+-#   - if current_user
+-#     Signed in as <strong>#{current_user.name}</strong>
+-#     #sign_out= link_to "Sign out", signout_path
+-#     .row12
+-#       -# = form_for current_user do |f|
+-#       -#   %div
+-#       -#     = f.label :filepicker_url, "Upload Your Avatar:"
+-#       -#     = f.filepicker_field :filepicker_url
+-#       -#   = f.submit
+-#       #recorderElement
+-#   - else
+-#     #sign_in= link_to "Sign in with Facebook", "/auth/facebook"

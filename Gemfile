@@ -7,6 +7,8 @@ gem 'pg'
 # Custom
 gem 'koala'
 gem 'omniauth-facebook'
+gem 'filepicker-rails'
+gem 'opentok'
 
 # Bootstrap
 gem 'haml-rails'

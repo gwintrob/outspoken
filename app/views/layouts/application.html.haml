@@ -4,11 +4,22 @@
     %title Outspoken
     = stylesheet_link_tag 'application', :media => 'all'
     = javascript_include_tag 'application', :media => 'all'
+    = filepicker_js_include_tag
+    = javascript_include_tag 'http://static.opentok.com/v1.1/js/TB.min.js'
     = csrf_meta_tags
   %body
     .navbar.navbar-inverse.navbar-fixed-top
       .navbar-inner
         .container
-          .brand Outspoken
+          = link_to "Outspoken", '/', :class => 'brand'
+          %ul.nav.pull-right
+            %li
+              - if current_user
+                - @data = {'user_id' => current_user.id}
+                #hidden_data{@data}
+                = link_to "Sign out", signout_path
+                %li= image_tag current_user.image_url
+              - else
+                = link_to "Sign in with Facebook", "/auth/facebook"
     .container{:style => 'margin-top:50px'}
       = yield

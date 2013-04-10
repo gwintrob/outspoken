@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :oauth_expires_at, :oauth_token, :provider, :uid
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
+      user.image_url = auth.info.image
       user.provider = auth.provider
       user.uid = auth.uid
       user.name = auth.info.name

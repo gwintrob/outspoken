@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130409055902) do
+ActiveRecord::Schema.define(:version => 20130409231332) do
+
+  create_table "dashboards", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "projects", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "responses", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "provider"
@@ -21,6 +36,16 @@ ActiveRecord::Schema.define(:version => 20130409055902) do
     t.datetime "oauth_expires_at"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "filepicker_url"
+    t.string   "image_url"
+  end
+
+  create_table "videos", :force => true do |t|
+    t.string   "tokbox_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "tokbox_url"
+    t.integer  "user_id"
   end
 
 end

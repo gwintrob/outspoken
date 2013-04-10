@@ -58,5 +58,7 @@ module Outspoken
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.filepicker_rails.api_key = 'AnvWq9ANxRzC6u6gB9lOVz'
   end
 end

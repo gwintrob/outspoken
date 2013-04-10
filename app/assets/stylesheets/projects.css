@@ -1,0 +1,43 @@
+ul .unstyled {
+  list-style-type: none;
+}
+
+.sub-view {
+	height: 350px;
+}
+
+.lyrics {
+	overflow: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.centered {
+	display: block;
+	margin: auto;
+}
+
+.question {
+	padding: 5px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+
+.question:hover {
+	cursor: pointer;
+	background-color: #D5DFFF;
+}
+
+.video {
+	margin-bottom: 10px;
+}
+
+.answered {
+	background-image: ;
+}
+
+.unanswered {
+	background-image: ;
+}
